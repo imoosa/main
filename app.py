@@ -9,6 +9,10 @@ from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime
 import streamlit as st
 from tensorflow.python import tf2
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+
 
 yf.pdr_override()
 
