@@ -75,7 +75,7 @@ def run_streamlit_app():
     scaler = MinMaxScaler(feature_range=(0, 1))
     data_training_array = scaler.fit_transform(data_training)
 
-    model = load_model('keras_model.h5', custom_objects={'CustomLayer': CustomLayer, 'custom_loss': custom_loss})
+    model = load_model('keras_model.h5')
 
     past_100_days = pd.DataFrame(data_training['Close'].tail(100).values, columns=['Close'])
     final_df = pd.concat([past_100_days, data_testing], ignore_index=True)
