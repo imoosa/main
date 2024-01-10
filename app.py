@@ -8,6 +8,7 @@ from pandas_datareader import data as pdr
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime
 import streamlit as st
+from tensorflow.python import tf2
 
 yf.pdr_override()
 
