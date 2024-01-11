@@ -63,7 +63,7 @@ def run_streamlit_app():
     df = load_data(user_input)
 
     st.subheader('Data Starting from 2010')
-    st.write(df.tail())
+    st.write(df.tail(25))
 
     plot_closing_price(df)
     plot_closing_price_with_ma(df)
