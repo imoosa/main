@@ -58,7 +58,7 @@ def plot_predictions_vs_original(y_test, y_predicted):
 
 def run_streamlit_app():
     st.title('Stock Trend Prediction')
-    user_input = st.text_input('Enter Stock Ticker choose from Yfinance: ')
+    user_input = st.text_input('Enter Stock Ticker choose from Yfinance: ', 'GOOG')
 
     df = load_data(user_input)
 
